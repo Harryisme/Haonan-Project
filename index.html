@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clean and Beautiful Website</title>
+    <title>Long-Scrolling Website</title>
     <style>
         /* Reset default browser styles */
         body, h1, p {
@@ -18,30 +18,60 @@
             color: #333;
         }
 
-        /* Create a clean and centered layout */
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        /* Create the main container */
+        .container {
+            width: 100%;
             height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #f2f2f2;
         }
 
         /* Style the main heading */
         h1 {
-            font-size: 2.5rem;
-            text-align: center;
+            font-size: 3rem;
             margin-bottom: 1rem;
         }
 
         /* Style the paragraph text */
         p {
             font-size: 1.2rem;
-            text-align: center;
             max-width: 600px;
-            margin: 0 auto 1.5rem;
+            text-align: center;
+            margin-bottom: 2rem;
         }
 
-        /* Add a call-to-action button */
+        /* Create a section with a background image */
+        .section-image {
+            background-image: url('your-background-image.jpg');
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+        }
+
+        /* Style the section heading in white */
+        .section-image h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Style the section text in white */
+        .section-image p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin-bottom: 2rem;
+        }
+
+        /* Create a call-to-action button */
         .cta-button {
             display: inline-block;
             background-color: #007BFF;
@@ -64,11 +94,23 @@
     </style>
 </head>
 <body>
-    <h1>Welcome to Our Website</h1>
-    <p>This is a clean and beautiful website template. You can customize it to create your own stunning web pages.</p>
-    <div>
+    <div class="container">
+        <h1>Welcome to Our Long-Scrolling Website</h1>
+        <p>This is a modern and stylish long-scrolling website template. Scroll down to explore more.</p>
+    </div>
+
+    <div class="section-image">
+        <h2>Section 1</h2>
+        <p>This section could include a background image and a brief description of your content.</p>
         <a class="cta-button" href="#">Learn More</a>
+    </div>
+
+    <div class="section-image">
+        <h2>Section 2</h2>
+        <p>This section could be another visually appealing area with additional content.</p>
         <a class="cta-button" href="#">Contact Us</a>
     </div>
+
+    <!-- Add more sections as needed -->
 </body>
 </html>
