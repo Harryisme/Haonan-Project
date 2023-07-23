@@ -3,17 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Static Web App</title>
+    <title>Clean and Beautiful Website</title>
+    <style>
+        /* Reset default browser styles */
+        body, h1, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Set a pleasant font for the website */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Create a clean and centered layout */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* Style the main heading */
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        /* Style the paragraph text */
+        p {
+            font-size: 1.2rem;
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto 1.5rem;
+        }
+
+        /* Add a call-to-action button */
+        .cta-button {
+            display: inline-block;
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        /* Style the button on hover */
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Add some spacing for the button */
+        .cta-button + .cta-button {
+            margin-left: 10px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Static Web App</h1>
-    </header>
-    <main>
-        <p>This is a simple static web page.</p>
-    </main>
-    <footer>
-        <p>&copy; 2023 My Static Web App</p>
-    </footer>
+    <h1>Welcome to Our Website</h1>
+    <p>This is a clean and beautiful website template. You can customize it to create your own stunning web pages.</p>
+    <div>
+        <a class="cta-button" href="#">Learn More</a>
+        <a class="cta-button" href="#">Contact Us</a>
+    </div>
 </body>
 </html>
