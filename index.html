@@ -16,55 +16,39 @@
             font-family: Arial, sans-serif;
             line-height: 1.6;
             color: #333;
+            background-color: #f2f2f2;
         }
 
-        /* Create a long-scrolling layout */
+        /* Create a clean and centered layout */
         .container {
-            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
         }
 
         /* Style the main heading */
         h1 {
             font-size: 3rem;
             text-align: center;
-            padding: 50px 0;
-            background-color: #007BFF;
-            color: #fff;
-            margin: 0;
+            margin-bottom: 1rem;
         }
 
-        /* Style the Power App frame section */
-        .power-app-section {
-            background-color: #f2f2f2;
-            padding: 50px 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
-
-        /* Add a frame for the Power App */
+        /* Style the Power App frame */
         .power-app-frame {
             border: none;
             width: 100%;
             height: 800px; /* Adjust the height as needed */
+            max-width: 1200px;
         }
 
-        /* Style the section heading */
-        .section-heading {
-            font-size: 2rem;
+        /* Style the description */
+        .description {
+            font-size: 1.2rem;
             text-align: center;
-            padding: 30px 0;
-            background-color: #e5e5e5;
-            margin: 0;
-        }
-
-        /* Style the section content */
-        .section-content {
             max-width: 800px;
-            margin: 0 auto;
-            padding: 30px;
-            text-align: center;
+            margin-top: 30px;
         }
     </style>
 </head>
@@ -72,28 +56,10 @@
     <div class="container">
         <h1>Welcome to Your Static Web App with Power App Integration</h1>
 
-        <!-- Power App section -->
-        <section class="power-app-section">
-            <iframe class="power-app-frame" src="https://apps.powerapps.com/play/e/default-b5dc206c-17fd-4b06-8bc8-24f0bb650229/a/f0129276-567c-4bdf-b372-51636201c823?tenantId=b5dc206c-17fd-4b06-8bc8-24f0bb650229" allow="fullscreen"></iframe>
-        </section>
+        <!-- Power App frame -->
+        <iframe class="power-app-frame" src="https://apps.powerapps.com/play/e/default-b5dc206c-17fd-4b06-8bc8-24f0bb650229/a/f0129276-567c-4bdf-b372-51636201c823?tenantId=b5dc206c-17fd-4b06-8bc8-24f0bb650229" allow="fullscreen"></iframe>
 
-        <!-- Section 1 -->
-        <section>
-            <h2 class="section-heading">Section 1</h2>
-            <div class="section-content">
-                <p>This section could include a brief description of your content.</p>
-            </div>
-        </section>
-
-        <!-- Section 2 -->
-        <section>
-            <h2 class="section-heading">Section 2</h2>
-            <div class="section-content">
-                <p>This section could be another visually appealing area with additional content.</p>
-            </div>
-        </section>
-
-        <!-- Add more sections as needed -->
+        <p class="description">This is a clean and beautiful website with your Power App integrated. Users can interact with your app directly within this frame.</p>
     </div>
 </body>
 </html>
