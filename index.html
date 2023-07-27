@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Long-Scrolling Website</title>
+    <title>Your Static Web App with Power App Integration</title>
     <style>
         /* Reset default browser styles */
         body, h1, p {
@@ -18,100 +18,44 @@
             color: #333;
         }
 
-        /* Create the main container */
-        .container {
-            width: 100%;
-            height: 100vh;
+        /* Create a clean and centered layout */
+        body {
             display: flex;
-            flex-direction: column;
-            align-items: center;
             justify-content: center;
-            background-color: #f2f2f2;
+            align-items: center;
+            height: 100vh;
         }
 
         /* Style the main heading */
         h1 {
-            font-size: 3rem;
+            font-size: 2.5rem;
+            text-align: center;
             margin-bottom: 1rem;
         }
 
         /* Style the paragraph text */
         p {
             font-size: 1.2rem;
-            max-width: 600px;
             text-align: center;
-            margin-bottom: 2rem;
+            max-width: 600px;
+            margin: 0 auto 1.5rem;
         }
 
-        /* Create a section with a background image */
-        .section-image {
-            background-image: url('your-background-image.jpg');
-            background-size: cover;
-            background-position: center;
+        /* Add a frame for the Power App */
+        .power-app-frame {
+            border: none;
             width: 100%;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: #fff;
-            text-align: center;
-        }
-
-        /* Style the section heading in white */
-        .section-image h2 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-
-        /* Style the section text in white */
-        .section-image p {
-            font-size: 1.2rem;
-            max-width: 600px;
-            margin-bottom: 2rem;
-        }
-
-        /* Create a call-to-action button */
-        .cta-button {
-            display: inline-block;
-            background-color: #007BFF;
-            color: #fff;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-size: 1.1rem;
-        }
-
-        /* Style the button on hover */
-        .cta-button:hover {
-            background-color: #0056b3;
-        }
-
-        /* Add some spacing for the button */
-        .cta-button + .cta-button {
-            margin-left: 10px;
+            height: 800px; /* Adjust the height as needed */
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to Haonan's Weather Website</h1>
-        <p>This is a modern and stylish weather-searching website. Scroll down to explore more.</p>
-    </div>
-
-    <div class="section-image">
-        <h2>Section 1</h2>
-        <p>This section could include a background image and a brief description of your content.</p>
-        <a class="cta-button" href="#">Learn More</a>
-    </div>
-
-    <div class="section-image">
-        <h2>Section 2</h2>
-        <p>This section could be another visually appealing area with additional content.</p>
-        <a class="cta-button" href="#">Contact Us</a>
-    </div>
-
-    <!-- Add more sections as needed -->
-<iframe src="https://apps.powerapps.com/play/e/default-b5dc206c-17fd-4b06-8bc8-24f0bb650229/a/f0129276-567c-4bdf-b372-51636201c823?tenantId=b5dc206c-17fd-4b06-8bc8-24f0bb650229" width="800" height="600" style="border: none;"></iframe>
+    <h1>Welcome to Your Static Web App with Power App Integration</h1>
+    <p>This is a clean and beautiful website template with your Power App integrated below:</p>
+    
+    <!-- Add the iframe to embed your Power App -->
+    <iframe class="power-app-frame" src="https://apps.powerapps.com/play/e/default-b5dc206c-17fd-4b06-8bc8-24f0bb650229/a/f0129276-567c-4bdf-b372-51636201c823?tenantId=b5dc206c-17fd-4b06-8bc8-24f0bb650229" allow="fullscreen"></iframe>
+    
+    <!-- More content or sections for your web app can be added here -->
 </body>
 </html>
